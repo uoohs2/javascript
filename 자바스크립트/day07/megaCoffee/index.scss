@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	width: 80%;
+	height: auto;
+	margin: 100px auto;
+    color: #333;
+	.card {
+		display: flex;
+		flex-direction: column;
+        justify-content: center;
+		gap: 10px;
+		width: 100%;
+		height: 500px;
+		padding: 20px;
+		border: 1px solid lightgrey;
+		border-radius: 10px;
+		box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+		.ice {
+            width: fit-content;
+			color: white;
+			padding: 8px 20px;
+			border-radius: 20px;
+			background-color: rgb(39, 78, 219);
+		}
+		.hot {
+            width: fit-content;
+			color: white;
+			padding: 8px 20px;
+			border-radius: 20px;
+			background-color: rgb(158, 32, 32);
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+        .nameKr{
+            font-weight: bold;
+        }
+        .nameEg{
+            color: grey;
+            font-size: 14px;
+        }
+	}
+}
